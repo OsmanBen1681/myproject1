@@ -14,9 +14,9 @@ def second() :
 def third() :
     return 'This is the subpage of third  page'
 
-@app.route('forth/<string:id>')
+@app.route('/forth/<string:id>')
 def forth(id) :
-    return 'Id number of this page is {id}'
+    return f'Id number of this page is {id}'
 
 
 
@@ -31,3 +31,4 @@ def forth(id) :
 
 if __name__ == '__main__' :
     app.run(debug=True)
+    #app.run(host='0.0.0.0', port=80)
