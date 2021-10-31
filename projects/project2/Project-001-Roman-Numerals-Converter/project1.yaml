@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: |
   This template launches an EC2 with a security group that enables SSH connection.
-  
+  And this template created for Romen Numerals converter web page.
 Resources:
   osmanec2:
     Type: AWS::EC2::Instance
@@ -30,18 +30,14 @@ Resources:
             sudo yum -y install python-virtualenv
             sudo pip3 install flask
             cd /home/ec2-user/
-            wget https://raw.githubusercontent.com/OsmanBen1681/myproject1/main/projects/project1/app.py
-            mkdir static
-            cd static
-            wget https://github.com/OsmanBen1681/myproject1/blob/main/projects/project1/static/cat0.jpg?raw=true
-            wget https://github.com/OsmanBen1681/myproject1/blob/main/projects/project1/static/cat1.jpg?raw=true
-            wget https://github.com/OsmanBen1681/myproject1/blob/main/projects/project1/static/cat2.jpg?raw=true
-            wget https://github.com/OsmanBen1681/myproject1/blob/main/projects/project1/static/cat3.png?raw=true
-            cd ..
+            wget https://raw.githubusercontent.com/OsmanBen1681/myproject1/main/projects/project2/Project-001-Roman-Numerals-Converter/convert-to-roman-numerals.py
             mkdir templates
             cd templates
-            wget https://raw.githubusercontent.com/OsmanBen1681/myproject1/main/projects/project1/templates/index.html
+            wget https://raw.githubusercontent.com/OsmanBen1681/myproject1/main/projects/project2/Project-001-Roman-Numerals-Converter/templates/index.html
+            wget https://raw.githubusercontent.com/OsmanBen1681/myproject1/main/projects/project2/Project-001-Roman-Numerals-Converter/templates/result.html
+            
             cd ..
+            
             sudo python3 app.py
             
             
