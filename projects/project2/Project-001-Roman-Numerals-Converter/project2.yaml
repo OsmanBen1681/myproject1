@@ -38,7 +38,7 @@ Resources:
             
             cd ..
             
-            sudo python3 convert-to-roman-numerals.py
+            sudo python3 app.py
             
             
           
