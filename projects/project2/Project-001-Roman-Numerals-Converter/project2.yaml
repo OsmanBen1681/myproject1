@@ -37,7 +37,7 @@ Resources:
             wget https://raw.githubusercontent.com/OsmanBen1681/myproject1/main/projects/project2/Project-001-Roman-Numerals-Converter/templates/result.html
             
             cd ..
-            
+            sudo chmod +x convert-to-roman-numerals.py
             sudo python3 convert-to-roman-numerals.py
             
             
