@@ -15,12 +15,7 @@ Parameters:
     Description: 
     Type: List<AWS::EC2::Subnet::Id>
 
-  
-    
-  
-    
-  
-Metadata:
+
   
 Mappings:
   RegionImageMap:
